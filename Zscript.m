@@ -9,7 +9,7 @@
 %   is a plot of Z vs P for four different T.
 %   Secondary output is a table of Z values for the various P & T. Currently
 %   the table is not displayed by default, however this can be changed by
-%   removing the percent sign "%" from the penultimate line of the function's
+%   removing the percent sign "%" from the last line of the script's
 %   .m file. Furthermore, note that Z is calculated by an algorithm
 %   avoiding loops.
 
@@ -73,11 +73,11 @@ legend('T=50F','T=100F','T=150F','T=200F')
 % -- 3.2 Table output
 
 %Haven't figured out how to present Z values in a satisfactory manner.
-%However you may wish to remove the "%" from the penultimate line (before
-%end). This will produce a table for which each row corresponds to a given
+%However you may wish to remove the "%" from the last line. 
+%This will produce a table for which each row corresponds to a given
 %Temperature (50, 100, 150, 200) and each column to a given Pressure
 %(14.7,100,200...2000|N=21 values, 20 for 100...2000 plus 14.7).
 
 
-TABLE=array2table(Z)
+%TABLE=array2table(Z)
 
