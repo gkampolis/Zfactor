@@ -1,8 +1,10 @@
 % -------- Short Description --------
+
 %   Zscipt calculates Z for various P and T from composition input, assuming gas
 %   of C1,C2,C3 only. 
 
 % -------- Description --------
+
 %   User is asked to provide composition values for C1,C2 & C3 and then Z
 %   is calculated for T(50-200F) and P(14.7 and 100-2000 psia). Main output 
 %   is a plot of Z vs P for four different T.
@@ -59,9 +61,11 @@ D= 10.^(0.3106-0.49*Tpr_mat+0.1824*Tpr_mat.^2);
 B= (0.62-0.23*Tpr_mat).*Ppr_mat+(0.066./(Tpr_mat-0.86)-0.037).*Ppr_mat.^2+0.32./(10.^(9.*(Tpr_mat-1))).*Ppr_mat.^6;
 Znl= A+(1-A)./exp(B)+C.*Ppr_mat.^D;  % nl simply stands for no-loop.
 Z= Znl';
+
 %% --- 3. Output ---
 
 % -- 3.1 Plot Z vs P
+
 figure
 plot(Ppsia,Z(1,:),Ppsia,Z(2,:),Ppsia,Z(3,:),Ppsia,Z(4,:))
 title('Z vs P for various T')
