@@ -1,0 +1,8 @@
+title: Zfactor script (Matlab)
+description: A script for calculating Z factor (and a way for me to see how GitHub works).
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
