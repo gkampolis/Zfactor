@@ -10,8 +10,9 @@ is a plot of Z vs P for four different T.
 Secondary output is a table of Z values for the various P & T. Currently
 the table is not displayed by default, however this can be changed by
 removing the percent sign "%" from the last line of the script's
-.m file. Furthermore, note that Z is calculated by an algorithm
-avoiding loops.
+.m file. Furthermore, loops are avoided.
+
+The script is written in such a way to be easily modifiable (for example different ranges for pressure & temperature, or adding more compounds).
 
 ### What is Z?
 Z is a factor that quantifies how a real gas behaves differently that an ideal gas. It's known as the gas deviation factor or the compression factor. It's a very usefull property as it allows the generalisation of ideal gas law in thermodynamics: PV=n**Z**RT.
